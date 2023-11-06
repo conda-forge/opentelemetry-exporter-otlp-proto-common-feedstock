@@ -22,6 +22,7 @@ requirements:
   run:
     - python >=3.7
     - opentelemetry-proto =={{ version }}
+    - backoff >=1.10.0,<2.0.0  # NOTE [py<37]
 
 test:
   imports:
