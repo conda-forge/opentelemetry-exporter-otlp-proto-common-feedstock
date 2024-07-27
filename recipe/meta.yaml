@@ -42,5 +42,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - conda-forge/opentelemetry-proto
     - rxm7706
     - mariusvniekerk
