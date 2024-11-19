@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_exporter_otlp_proto_common-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_exporter_otlp_proto_common-{{ version }}.tar.gz
   sha256: 7aebaa5fc9ff6029374546df1f3a62616fda07fccd9c6a8b7892ec130dd8baca
 
 build:
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - hatchling
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - opentelemetry-proto =={{ version }}
   # NOTE backoff only required for py<37 but pip checks fails without it
     - backoff >=1.10.0,<3.0.0
@@ -32,6 +32,7 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
