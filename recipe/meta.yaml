@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-exporter-otlp-proto-common" %}
-{% set version = "1.39.0" %}
+{% set version = "1.39.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_exporter_otlp_proto_common-{{ version }}.tar.gz
-  sha256: a135fceed1a6d767f75be65bd2845da344dd8b9258eeed6bc48509d02b184409
+  sha256: 763370d4737a59741c89a67b50f9e39271639ee4afc999dadfe768541c027464
 
 build:
   noarch: python
