@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-exporter-otlp-proto-common" %}
-{% set version = "1.43.0" %}
+{% set version = "1.44.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_exporter_otlp_proto_common-{{ version }}.tar.gz
-  sha256: c4e32ba6d6b13bdb2b8f6764c4fd28d00192826561aa04f6d14eedfce7ac076f
+  sha256: dc87a5a5bc58f149a56d1547e4691588fa12994cdc3bc039a694ccb3375862ac
 
 build:
   noarch: python
@@ -46,3 +46,4 @@ extra:
     - conda-forge/opentelemetry-proto
     - rxm7706
     - mariusvniekerk
+    - pb01ka
